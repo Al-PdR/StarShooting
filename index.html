@@ -1,0 +1,31 @@
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href='index.css' rel='stylesheet' type='text/css'>
+
+<style>
+    body{
+        margin: 0;
+        background: black;
+    }
+    #modal{
+        background-image: linear-gradient(to right, #000000 0%, #45088b 50%, #000000 100%);
+        box-shadow: 0px 0px 10px 0.5px #45088b; 
+    }
+</style>
+<div class="fixed text-white text-md ml-2 mt-1 select-none"><span>Score: </span><span id="scoreEl">0</span></div>
+
+<div id='stars2'></div>
+
+<div id="modalEl" class="fixed inset-0 flex items-center justify-center">
+    <div id="modal" class="max-w-md w-full p-6 text-center">
+        <h1 id="bigScoreEl" class="text-white text-4xl font-bold leading-none">0</h1>
+        <p class="text-sm text-white mb-4">Points</p>
+        <div>
+            <button id="startGameBtn" class="bg-purple-500 text-white w-full py-3 rounded-full text-sm">Start Game</button>
+        </div>
+    </div>
+</div>
+<canvas>
+
+</canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./index.js"></script>
